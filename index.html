@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill in The Blank Quiz Game</title>
+</head>
+<body>
+    
+
+ <script>
+const questions = [
+["Which word goes beyond vest, beans and quartet?", "String"],
+["What is another word for lexicon.","Dictionary"],
+["Name the seventh planet from the sun.", "Uranus"],
+["Who invented the rabies vaccination?", "Louis Pasteur"],
+["Wher would you find the sea of tranquility?", "The Moon"],]
+
+ console.log('Start Game')
+
+var correct = 0;
+
+var username = prompt("Please what is your name?");
+  console.log(username)
+  alert(`Hi ${username}`)
+
+var answer = prompt("Do you mind playing a game with me?")
+if  (answer === "Yes" ) {
+  document.write("Please press the ok button to continue");
+
+  } else (answer === "No")
+   {
+  document.write("<h1>Thank you for your time</h1>");
+
+ }
+
+var answer1 = prompt("Which word goes beyond vest, beans and quartet?");
+if ( answer1 === 'String' ) {
+ correct += 1; 
+}
+var answer2 = prompt("What is another word for lexicon.");
+if ( answer2 === 'Dictionary' ) {
+ correct += 1; 
+}
+var answer3 = prompt("Name the seventh planet from the sun.");
+if ( answer3 === 'Uranus' ) {
+ correct += 1; 
+}
+var answer4 = prompt("Who invented the rabies vaccination?");
+if ( answer4 === 'Louis Pasteur' ) {
+ correct += 1; 
+}
+var answer5 = prompt("Wher would you find the sea of tranquility?");
+if ( answer5 === 'The Moon' ) {
+ correct += 1; 
+}
+document.write("<p>You got " + correct + " out of 5 questions correct.<p>");
+if ( correct === 5 ) {
+  document.write("<p><strong>You earned 5 point!</strong></p>");  
+} else if (correct > 3) {
+  document.write("<p><strong>You earned a 3 point.</strong></p>");  
+} else if (correct > 2) {
+  document.write("<p><strong>You earned a 2 point.</strong></p>");  
+} else {
+  document.write("<p><strong>No point for you. Do you want to try again?</strong></p>");
+}
+ console.log('End Game')         
+ 
+      
+   </script>
+</body>
+</html>
